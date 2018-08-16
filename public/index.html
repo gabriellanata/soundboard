@@ -1,0 +1,140 @@
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<title>ScotiaTunes</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <style media="screen">
+      button{
+          width: 99px;
+          height: 99px;
+      }
+      button.btn-space{
+          width: 400px;
+      }
+      .row{
+          justify-content: center;
+      }
+  </style>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <body>
+
+	<div class="container" id="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <button type="button" onclick="onPress('1')" class="btn btn-primary"><b>1</b><br>Secret</button>&nbsp;
+            <button type="button" onclick="onPress('2')" class="btn btn-primary"><b>2</b><br>My Man</button>&nbsp;
+            <button type="button" onclick="onPress('3')" class="btn btn-primary"><b>3</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('4')" class="btn btn-primary"><b>4</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('5')" class="btn btn-primary"><b>5</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('6')" class="btn btn-primary"><b>6</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('7')" class="btn btn-primary"><b>7</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('8')" class="btn btn-primary"><b>8</b><br>Estupidos</button>&nbsp;
+            <button type="button" onclick="onPress('9')" class="btn btn-primary"><b>9</b><br>Muggles</button>&nbsp;
+            <button type="button" onclick="onPress('0')" class="btn btn-primary"><b>0</b><br>Retirate</button>&nbsp;
+            <button type="button" onclick="onPress('-')" class="btn btn-primary"><b>-</b><br>Male</button>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <button type="button" onclick="onPress('Q')" class="btn btn-primary"><b>Q</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('W')" class="btn btn-primary"><b>W</b><br>Wrong</button>&nbsp;
+            <button type="button" onclick="onPress('E')" class="btn btn-primary"><b>E</b><br>John Cena</button>&nbsp;
+            <button type="button" onclick="onPress('R')" class="btn btn-primary"><b>R</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('T')" class="btn btn-primary"><b>T</b><br>Tiger</button>&nbsp;
+            <button type="button" onclick="onPress('Y')" class="btn btn-primary"><b>Y</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('U')" class="btn btn-primary"><b>U</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('I')" class="btn btn-primary"><b>I</b><br>Imperial</button>&nbsp;
+            <button type="button" onclick="onPress('O')" class="btn btn-primary"><b>O</b><br>OMG</button>&nbsp;
+            <button type="button" onclick="onPress('P')" class="btn btn-primary"><b>P</b><br>&nbsp;</button>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <button type="button" onclick="onPress('A')" class="btn btn-primary"><b>A</b><br>Angels</button>&nbsp;
+            <button type="button" onclick="onPress('S')" class="btn btn-primary"><b>S</b><br>Success</button>&nbsp;
+            <button type="button" onclick="onPress('D')" class="btn btn-primary"><b>D</b><br>Drama</button>&nbsp;
+            <button type="button" onclick="onPress('F')" class="btn btn-primary"><b>F</b><br>Fail</button>&nbsp;
+            <button type="button" onclick="onPress('G')" class="btn btn-primary"><b>G</b><br>Muahaha</button>&nbsp;
+            <button type="button" onclick="onPress('H')" class="btn btn-primary"><b>H</b><br>HA HA</button>&nbsp;
+            <button type="button" onclick="onPress('J')" class="btn btn-primary"><b>J</b><br>Sad</button>&nbsp;
+            <button type="button" onclick="onPress('K')" class="btn btn-primary"><b>K</b><br>Darkness</button>&nbsp;
+            <button type="button" onclick="onPress('L')" class="btn btn-primary"><b>L</b><br>Love</button>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <button type="button" onclick="onPress('Z')" class="btn btn-primary"><b>Z</b><br>Crickets</button>&nbsp;
+            <button type="button" onclick="onPress('X')" class="btn btn-primary"><b>X</b><br>&nbsp;</button>&nbsp;
+            <button type="button" onclick="onPress('C')" class="btn btn-primary"><b>C</b><br>Clap</button>&nbsp;
+            <button type="button" onclick="onPress('V')" class="btn btn-primary"><b>V</b><br>Vaia Vaia</button>&nbsp;
+            <button type="button" onclick="onPress('B')" class="btn btn-primary"><b>B</b><br>Batman</button>&nbsp;
+            <button type="button" onclick="onPress('N')" class="btn btn-primary"><b>N</b><br>Turn Down</button>&nbsp;
+            <button type="button" onclick="onPress('M')" class="btn btn-primary"><b>M</b><br>Fabulous</button>&nbsp;
+            <button type="button" onclick="onPress(',')" class="btn btn-primary"><b>,</b><br>Inception</button>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <button type="button" onclick="onPress(' ')" class="btn btn-primary btn-space">SPACE</b><br>(Stop)</button>
+        </div>
+	</div> <!-- /container -->
+
+    <audio id="soundA" src="tunes/angels-singing.mp3"></audio>
+    <audio id="soundC" src="tunes/claps.mp3"></audio>
+    <audio id="soundD" src="tunes/drama.mp3"></audio>
+    <audio id="soundI" src="tunes/imperial_march.mp3"></audio>
+    <audio id="soundF" src="tunes/fail-sound.mp3"></audio>
+    <audio id="soundM" src="tunes/fabulous.mp3"></audio>
+    <audio id="soundT" src="tunes/eye-of-the-tiger.mp3"></audio>
+    <audio id="sound," src="tunes/inception.mp3"></audio>
+    <audio id="soundS" src="tunes/celebration.mp3"></audio>
+    <audio id="soundL" src="tunes/marvin.mp3"></audio>
+    <audio id="soundK" src="tunes/hellodarkness.mp3"></audio>
+    <audio id="soundJ" src="tunes/mortysad.mp3"></audio>
+    <audio id="sound1" src="tunes/astley.mp3"></audio>
+    <audio id="soundO" src="tunes/omg.mp3"></audio>
+    <audio id="soundZ" src="tunes/crickets.mp3"></audio>
+    <audio id="soundH" src="tunes/haha.mp3"></audio>
+    <audio id="soundN" src="tunes/turn-down.mp3"></audio>
+    <audio id="soundE" src="tunes/cena.mp3"></audio>
+    <audio id="sound8" src="tunes/estupidos.ogg"></audio>
+    <audio id="sound9" src="tunes/muggle.ogg"></audio>
+    <audio id="sound0" src="tunes/retirate.ogg"></audio>
+    <audio id="sound-" src="tunes/male.ogg"></audio>
+    <audio id="soundV" src="tunes/vaia-vaia.ogg"></audio>
+    <audio id="soundB" src="tunes/batman.mp3"></audio>
+    <audio id="soundG" src="tunes/muahaha.mp3"></audio>
+    <audio id="soundW" src="tunes/wrong.mp3"></audio>
+    <audio id="sound2" src="tunes/my-man.mp3"></audio>
+
+  </body>
+
+	<script type="text/javascript">
+
+        function onPress(key) {
+            stopSound()
+            if (key != " ") {
+                document.getElementById("sound"+key).play();
+            }
+            if (window.getSelection) { window.getSelection().removeAllRanges(); }
+            else if (document.selection) { document.selection.empty(); }
+        }
+
+        function onKeyboard(e) {
+            var key = e.key.toUpperCase();
+            console.log("KeyPress: "+key);
+            onPress(key);
+        }
+
+        function stopSound() {
+            var audios = document.getElementsByTagName("audio")
+            for (var i = 0; i<audios.length; i++) {
+                audios[i].pause();
+                audios[i].currentTime = 0;
+            }
+        }
+
+        document.addEventListener('keypress', onKeyboard, false);
+	</script>
+</html>
